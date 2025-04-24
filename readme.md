@@ -60,3 +60,14 @@ fastapi dev main.py
 pip install "uvicorn[standard]"
 uvicorn main:app --host 0.0.0.0 --port 4000
 ```
+
+
+11. Build the Docker Image
+```bash
+docker build -t myimage .
+```
+
+12. Start the Docker Container
+```bash
+docker run -d --name mycontainer -p 80:80 myimage
+```
