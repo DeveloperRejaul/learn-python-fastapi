@@ -71,3 +71,17 @@ docker build -t myimage .
 ```bash
 docker run -d --name mycontainer -p 80:80 myimage
 ```
+
+13. Pipenv PipFile setup
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install pipenv
+pipenv install
+
+# install package
+pipenv install requests
+
+# And to start a shell inside the environment:
+pipenv shell
+```
